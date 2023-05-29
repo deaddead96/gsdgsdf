@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&family=Tinos:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title> Сайт</title>
+</head>
+<body>
+<body style="background-color: #000000">
+<div class="header">
+    <div class="container">
+        <div class="header-line">
+            <div class="header-logo">
+                <img src="logo.png" alt=""height="100" weight="100">
+            </div>
+            <div class="nav">
+                <a class="nav-item" href="index.html">ГЛАВНАЯ</a>
+                <div class="dropup">
+                    <button class="dropbtn">ИНФОРМАЦИЯ</button>
+                    <div class="dropup-content">
+                        <a href="info.html">информация</a>
+                        <a href="news.html">новости</a>
+                        <a href="facts.html">факты</a>
+                    </div>
+                </div>
+                <div class="dropup">
+                    <button class="dropbtn">РЕЙТИНГ</button>
+                    <div class="dropup-content">
+                      <a href="tovar.html">топ популярных</a>
+                    </div>
+                </div>
+                <div class="dropup">
+                    <button class="dropbtn">О НАС</button>
+                    <div class="dropup-content">
+                      <a href="onas.html">контакты</a>
+                      <a href="https://vk.com/eto_energy">паблик редких</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <a class="button" href="formaggg.html">Связаться с нами</a>
+            </div>
+            <div class="menu">
+                <a href="">
+                    <img src="menuu.png" height="50px" width="50px" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 style="color: white">Новости</h1>
+        
+        <div class="row">
+            <div class="col">
+                <div style="text-align:center;">
+                    <img src="news1.jpg" alt="" style="width:50%">
+                  </div>
+                <h2 style="color: white">Выпуск нового энергетика</h2>
+                <ul id="news1">
+                    <li style="color: white">Наука шагнула вперед: создан новый энергетик! Ученые объединили свои усилия и разработали новый тип энергетического напитка. Он содержит самые передовые компоненты, которые дают ощущение бодрости и энергии на долгие часы. Новый энергетик позволит людям не только бодрствовать, но и работать лучше, а также увеличивает концентрацию и фокус внимания. Энергетический напиток станет настоящей находкой для всех, кто стремится к успеху и развитию.</li>
+                </ul>
+            </div>
+            
+            <div class="col">
+                <div style="text-align:center;">
+                    <img src="news2.jpg" alt="" style="width:50%">
+                  </div>
+                <h2 style="color: white">Фестиваль Monster</h2>
+                <ul id="news2">
+                    <li style="color: white">Летний фестиваль Monster energy – главное событие сезона! Уже в этом году ты сможешь побывать на одном из самых грандиозных фестивалей в мире. Monster energy соберет под своими знаменами тысячи людей, чтобы насладиться мощными выступлениями известных артистов, погрузиться в атмосферу единства и поддержки, а также, конечно, насладиться напитками из ассортимента Monster energy. Будь на чеку, и ты не пропустишь этот потрясающий праздник!</li>
+                </ul>
+            </div>
+            
+            <div class="col">
+                <div style="text-align:center;">
+                    <img src="news3.jpg" alt="" style="width:50%">
+                  </div>
+                <h2 id="news3" style="color: white">Новые вкусы Adrenaline Rush</h2>
+                <p style="color: white">Новые вкусы энергетиков – твой новый фаворит! Наша команда провела многочисленные исследования, чтобы создать 2 уникальных вкуса энергетиков, которые точно понравятся каждому. Первый вкус – Лимонно-базиликовый – дает приятное ощущение свежести и вкуса, такой аромат сочетается с любимой лимонадом и создает настоящее наслаждение для вкусовых рецепторов. Второй вкус – Кокосовый – дарит вкус свежего кокоса, который позволяет позволить себе путешествие в тропические земли. Он отлично подойдет для любителей экзотических фруктов и напитков.  Попробуйте и наслаждайтесь лучшими вкусами вместе с Adrenaline Rush!</p>
+            </div>
+        </div>
+
+<div  scri class="btn-up btn-up_hide"></div> 
+ 
+    <script> 
+        const btnUp = { 
+        el: document.querySelector('.btn-up'), 
+        show() { 
+            this.el.classList.remove('btn-up_hide'); 
+            }, 
+        hide() { 
+            this.el.classList.add('btn-up_hide'); 
+            }, 
+        addEventListener() {  
+            window.addEventListener('scroll', () => { 
+            const scrollY = window.scrollY || document.documentElement.scrollTop; 
+            scrollY > 400 ? this.show() : this.hide(); 
+            }); 
+            document.querySelector('.btn-up').onclick = () => { 
+            window.scrollTo({ 
+                top: 0, 
+                left: 0, 
+                behavior: 'smooth' 
+            }); 
+            } 
+        } 
+        } 
+        btnUp.addEventListener(); 
+    </script><div class="footer">
+    <ul style="list-style-type: none;"> 
+        <li><a href="index.html">ГЛАВНАЯ</a></li>
+        <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+        <li><a href="tovar.html">ТОП10</a></li>
+        <li><a href="onas.html">О НАС</a></li>
+        <li><a href="formaggg.html">Форма для записи на консультацию</a></li>
+    <div class="footer1">
+        <li>г.Москва</li>
+    </div>
+    </ul>
+    <div >
+    </div> 
+    <div class="copy">
+        <br>copyright 2023 
+    </div>       
+</div>
+</body>
+</html>
